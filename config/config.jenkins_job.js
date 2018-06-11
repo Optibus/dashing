@@ -150,7 +150,7 @@ module.exports = {
         },
         {
             id: 'rc-build-docker',
-            displayName: 'RC Docker Build',
+            displayName: 'RC Docker    Build',
             eventName: 'rc-build-docker',
             cronInterval: '*/10 * * * * *',
             apiMethod: 'last_build_info',
