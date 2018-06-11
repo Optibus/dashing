@@ -13,6 +13,7 @@ dashing.protected = function(req, res, next) {
 */
 
 // Set your default dashboard here
-//dashing.default_dashboard = 'tests-dashboard';
+dashing.default_dashboard = 'optibus';
+dashing.port = 5555
 
 dashing.start();
