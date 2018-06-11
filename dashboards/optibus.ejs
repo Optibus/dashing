@@ -1,0 +1,86 @@
+<script type='text/javascript'>
+$(function() {
+  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+//  Dashing.gridsterLayout('[{"col":2,"row":1},{"col":1,"row":1},{"col":3,"row":1},{"col":2,"row":2},{"col":3,"row":2},{"col":1,"row":2},{"col":5,"row":1},{"col":4,"row":2},{"col":2,"row":3}]')
+  Dashing.widget_base_dimensions = [330, 365]
+  Dashing.numColumns = 4
+});
+</script>
+
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1" class="widget-jenkins_job">
+      <div data-id="develop-build-docker" data-view="JenkinsJob" data-bind-class="result | append additionalclass" data-additionalclass=" widget"></div>
+      <i class="fa fa-archive icon-background"></i>
+    </li>
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1" class="widget-jenkins_job">
+      <div data-id="develop-test-euclid" data-view="JenkinsJob" data-bind-class="result | append additionalclass" data-additionalclass=" widget"></div>
+      <i class="fa fa-archive icon-background"></i>
+    </li>
+    <li data-row="3" data-col="1" data-sizex="1" data-sizey="1" class="widget-jenkins_job">
+      <div data-id="develop-test-e2e" data-view="JenkinsJob" data-bind-class="result | append additionalclass" data-additionalclass=" widget"></div>
+      <i class="fa fa-archive icon-background"></i>
+    </li>
+    <li data-row="4" data-col="1" data-sizex="1" data-sizey="1" class="widget-jenkins_job">
+      <div data-id="develop-test-testim" data-view="JenkinsJob" data-bind-class="result | append additionalclass" data-additionalclass=" widget"></div>
+      <i class="fa fa-archive icon-background"></i>
+    </li>
+    <li data-row="5" data-col="1" data-sizex="1" data-sizey="1" class="widget-circle_ci_job">
+      <div data-id="develop-circle_ci" data-view="CircleCi" data-bind-class="result | append additionalclass" data-additionalclass=" widget"></div>
+      <i class="fa fa-archive icon-background"></i>
+    </li>
+    <li data-row="6" data-col="1" data-sizex="1" data-sizey="1" class="widget-circle_ci_job">
+      <div data-id="develop-test-integration" data-view="JenkinsJob" data-bind-class="result | append additionalclass" data-additionalclass=" widget"></div>
+      <i class="fa fa-archive icon-background"></i>
+    </li>
+    <li data-row="1" data-col="2" data-sizex="1" data-sizey="1" class="widget-jenkins_job">
+      <div data-id="hotfix-build-docker" data-view="JenkinsJob" data-bind-class="result | append additionalclass" data-additionalclass=" widget"></div>
+      <i class="fa fa-archive icon-background"></i>
+    </li>
+    <li data-row="2" data-col="2" data-sizex="1" data-sizey="1" class="widget-jenkins_job">
+      <div data-id="hotfix-test-euclid" data-view="JenkinsJob" data-bind-class="result | append additionalclass" data-additionalclass=" widget"></div>
+      <i class="fa fa-archive icon-background"></i>
+    </li>
+    <li data-row="3" data-col="2" data-sizex="1" data-sizey="1" class="widget-jenkins_job">
+      <div data-id="hotfix-test-e2e" data-view="JenkinsJob" data-bind-class="result | append additionalclass" data-additionalclass=" widget"></div>
+      <i class="fa fa-archive icon-background"></i>
+    </li>
+    <li data-row="4" data-col="2" data-sizex="1" data-sizey="1" class="widget-jenkins_job">
+      <div data-id="hotfix-test-testim" data-view="JenkinsJob" data-bind-class="result | append additionalclass" data-additionalclass=" widget"></div>
+      <i class="fa fa-archive icon-background"></i>
+    </li>
+    <li data-row="5" data-col="2" data-sizex="1" data-sizey="1" class="widget-circle_ci_job">
+      <div data-id="hotfix-circle_ci" data-view="CircleCi" data-bind-class="result | append additionalclass" data-additionalclass=" widget"></div>
+      <i class="fa fa-archive icon-background"></i>
+    </li>
+    <li data-row="1" data-col="3" data-sizex="1" data-sizey="1" class="widget-jenkins_job">
+      <div data-id="rc-build-docker" data-view="JenkinsJob" data-bind-class="result | append additionalclass" data-additionalclass=" widget"></div>
+      <i class="fa fa-archive icon-background"></i>
+    </li>
+    <li data-row="2" data-col="3" data-sizex="1" data-sizey="1" class="widget-jenkins_job">
+      <div data-id="rc-test-euclid" data-view="JenkinsJob" data-bind-class="result | append additionalclass" data-additionalclass=" widget"></div>
+      <i class="fa fa-archive icon-background"></i>
+    </li>
+    <li data-row="3" data-col="3" data-sizex="1" data-sizey="1" class="widget-jenkins_job">
+      <div data-id="rc-test-e2e" data-view="JenkinsJob" data-bind-class="result | append additionalclass" data-additionalclass=" widget"></div>
+      <i class="fa fa-archive icon-background"></i>
+    </li>
+    <li data-row="4" data-col="3" data-sizex="1" data-sizey="1" class="widget-jenkins_job">
+      <div data-id="rc-test-testim" data-view="JenkinsJob" data-bind-class="result | append additionalclass" data-additionalclass=" widget"></div>
+      <i class="fa fa-archive icon-background"></i>
+    </li>
+    <li data-row="5" data-col="3" data-sizex="1" data-sizey="1" class="widget-circle_ci_job">
+      <div data-id="rc-circle_ci" data-view="CircleCi" data-bind-class="result | append additionalclass" data-additionalclass=" widget"></div>
+      <i class="fa fa-archive icon-background"></i>
+    </li>
+    <li data-row="6" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-view="Image" data-image="/logo-header.png"></div>
+    </li>
+    <li data-row="6" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>
+      <i class="fa fa-clock-o icon-background"></i>
+    </li>
+  </ul>
+</div>
+<%- contentFor('title') %>
+Optibus Jenkins Dashboard
