@@ -1,4 +1,5 @@
-var dashing = require('dashing-js').Dashing();
+require('dotenv').load();
+const dashing = require('dashing-js').Dashing();
 
 // Set your auth token here
 //dashing.auth_token = 'YOUR_AUTH_TOKEN';
