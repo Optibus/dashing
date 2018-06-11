@@ -15,7 +15,7 @@ module.exports = {
     jobs: [
         {
             id: 'develop-build-docker',
-            displayName: 'Develop Docker Build',
+            displayName: 'Develop Build',
             eventName: 'develop-build-docker',
             cronInterval: '*/10 * * * * *',
             apiMethod: 'last_build_info',
@@ -90,7 +90,7 @@ module.exports = {
         },
         {
             id: 'hotfix-build-docker',
-            displayName: 'Hotfix Docker Build',
+            displayName: 'Hotfix Build',
             eventName: 'hotfix-build-docker',
             cronInterval: '*/10 * * * * *',
             apiMethod: 'last_build_info',
@@ -150,7 +150,7 @@ module.exports = {
         },
         {
             id: 'rc-build-docker',
-            displayName: 'RC Docker    Build',
+            displayName: 'RC Build',
             eventName: 'rc-build-docker',
             cronInterval: '*/10 * * * * *',
             apiMethod: 'last_build_info',
