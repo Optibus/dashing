@@ -47,7 +47,7 @@ module.exports = {
             id: 'develop-test-euclid',
             displayName: 'Develop Euclid',
             eventName: 'develop-test-euclid',
-            cronInterval: '*/5 * * * * *',
+            cronInterval: '*/10 * * * * *',
             apiMethod: 'last_build_info',
 
             displayArguments: {
@@ -62,7 +62,7 @@ module.exports = {
             id: 'develop-test-e2e',
             displayName: 'Develop E2E',
             eventName: 'develop-test-e2e',
-            cronInterval: '*/5 * * * * *',
+            cronInterval: '*/10 * * * * *',
             apiMethod: 'last_build_info',
 
             displayArguments: {
@@ -74,10 +74,40 @@ module.exports = {
             }
         },
         {
-            id: 'develop-test-testim',
-            displayName: 'Develop testim',
-            eventName: 'develop-test-testim',
-            cronInterval: '*/5 * * * * *',
+            id: 'develop-test-smoke',
+            displayName: 'Develop smoke',
+            eventName: 'develop-test-smoke',
+            cronInterval: '*/10 * * * * *',
+            apiMethod: 'last_build_info',
+
+            displayArguments: {
+                title_isEnabled: true,
+                buildNumber_isEnabled: true,
+                timeAgo_isEnabled: true,
+                branch_isEnabled: false,
+                displayDuration_isEnabled: false
+            }
+        },
+        {
+            id: 'develop-test-sanity',
+            displayName: 'Develop sanity',
+            eventName: 'develop-test-sanity',
+            cronInterval: '*/10 * * * * *',
+            apiMethod: 'last_build_info',
+
+            displayArguments: {
+                title_isEnabled: true,
+                buildNumber_isEnabled: true,
+                timeAgo_isEnabled: true,
+                branch_isEnabled: false,
+                displayDuration_isEnabled: false
+            }
+        },
+        {
+            id: 'develop-test-regression',
+            displayName: 'Develop regression',
+            eventName: 'develop-test-regression',
+            cronInterval: '*/10 * * * * *',
             apiMethod: 'last_build_info',
 
             displayArguments: {
@@ -107,7 +137,7 @@ module.exports = {
             id: 'hotfix-test-euclid',
             displayName: 'Hotfix Euclid',
             eventName: 'hotfix-test-euclid',
-            cronInterval: '*/5 * * * * *',
+            cronInterval: '*/10 * * * * *',
             apiMethod: 'last_build_info',
 
             displayArguments: {
@@ -122,7 +152,7 @@ module.exports = {
             id: 'hotfix-test-e2e',
             displayName: 'Hotfix E2E',
             eventName: 'hotfix-test-e2e',
-            cronInterval: '*/5 * * * * *',
+            cronInterval: '*/10 * * * * *',
             apiMethod: 'last_build_info',
 
             displayArguments: {
@@ -134,10 +164,10 @@ module.exports = {
             }
         },
         {
-            id: 'hotfix-test-testim',
-            displayName: 'Hotfix testim',
-            eventName: 'hotfix-test-testim',
-            cronInterval: '*/5 * * * * *',
+            id: 'hotfix-test-sanity',
+            displayName: 'Hotfix sanity',
+            eventName: 'hotfix-test-sanity',
+            cronInterval: '*/10 * * * * *',
             apiMethod: 'last_build_info',
 
             displayArguments: {
@@ -167,7 +197,7 @@ module.exports = {
             id: 'rc-test-euclid',
             displayName: 'RC Euclid',
             eventName: 'rc-test-euclid',
-            cronInterval: '*/5 * * * * *',
+            cronInterval: '*/10 * * * * *',
             apiMethod: 'last_build_info',
 
             displayArguments: {
@@ -182,7 +212,7 @@ module.exports = {
             id: 'rc-test-e2e',
             displayName: 'RC E2E',
             eventName: 'rc-test-e2e',
-            cronInterval: '*/5 * * * * *',
+            cronInterval: '*/10 * * * * *',
             apiMethod: 'last_build_info',
 
             displayArguments: {
@@ -194,10 +224,40 @@ module.exports = {
             }
         },
         {
-            id: 'rc-test-testim',
-            displayName: 'RC testim',
-            eventName: 'rc-test-testim',
-            cronInterval: '*/5 * * * * *',
+            id: 'rc-test-smoke',
+            displayName: 'RC smoke',
+            eventName: 'rc-test-smoke',
+            cronInterval: '*/10 * * * * *',
+            apiMethod: 'last_build_info',
+
+            displayArguments: {
+                title_isEnabled: true,
+                buildNumber_isEnabled: true,
+                timeAgo_isEnabled: true,
+                branch_isEnabled: false,
+                displayDuration_isEnabled: false
+            }
+        },
+        {
+            id: 'rc-test-sanity',
+            displayName: 'RC sanity',
+            eventName: 'rc-test-sanity',
+            cronInterval: '*/10 * * * * *',
+            apiMethod: 'last_build_info',
+
+            displayArguments: {
+                title_isEnabled: true,
+                buildNumber_isEnabled: true,
+                timeAgo_isEnabled: true,
+                branch_isEnabled: false,
+                displayDuration_isEnabled: false
+            }
+        },
+        {
+            id: 'rc-test-regression',
+            displayName: 'RC regression',
+            eventName: 'rc-test-regression',
+            cronInterval: '*/10 * * * * *',
             apiMethod: 'last_build_info',
 
             displayArguments: {

@@ -1,0 +1,49 @@
+<script type='text/javascript'>
+$(function() {
+  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+//  Dashing.gridsterLayout('[{"col":2,"row":1},{"col":1,"row":1},{"col":3,"row":1},{"col":2,"row":2},{"col":3,"row":2},{"col":1,"row":2},{"col":5,"row":1},{"col":4,"row":2},{"col":2,"row":3}]')
+  Dashing.widget_base_dimensions = [330, 365]
+  Dashing.numColumns = 4
+});
+</script>
+
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1" class="widget-jenkins_job">
+      <div data-id="develop-test-smoke" data-view="JenkinsJob" data-bind-class="result | append additionalclass" data-additionalclass=" widget"></div>
+      <i class="fa fa-archive icon-background"></i>
+    </li>
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1" class="widget-jenkins_job">
+      <div data-id="develop-test-sanity" data-view="JenkinsJob" data-bind-class="result | append additionalclass" data-additionalclass=" widget"></div>
+      <i class="fa fa-archive icon-background"></i>
+    </li>
+    <li data-row="3" data-col="1" data-sizex="1" data-sizey="1" class="widget-jenkins_job">
+      <div data-id="develop-test-regression" data-view="JenkinsJob" data-bind-class="result | append additionalclass" data-additionalclass=" widget"></div>
+      <i class="fa fa-archive icon-background"></i>
+    </li>
+    <li data-row="1" data-col="2" data-sizex="1" data-sizey="1" class="widget-jenkins_job">
+      <div data-id="rc-test-smoke" data-view="JenkinsJob" data-bind-class="result | append additionalclass" data-additionalclass=" widget"></div>
+      <i class="fa fa-archive icon-background"></i>
+    </li>
+    <li data-row="2" data-col="2" data-sizex="1" data-sizey="1" class="widget-jenkins_job">
+      <div data-id="rc-test-sanity" data-view="JenkinsJob" data-bind-class="result | append additionalclass" data-additionalclass=" widget"></div>
+      <i class="fa fa-archive icon-background"></i>
+    </li>
+    <li data-row="3" data-col="2" data-sizex="1" data-sizey="1" class="widget-jenkins_job">
+      <div data-id="rc-test-regression" data-view="JenkinsJob" data-bind-class="result | append additionalclass" data-additionalclass=" widget"></div>
+      <i class="fa fa-archive icon-background"></i>
+    </li>
+    <li data-row="1" data-col="3" data-sizex="1" data-sizey="1" class="widget-jenkins_job">
+      <div data-view="Image" data-image="/logo-header.png"></div>
+    </li>
+    <li data-row="2" data-col="3" data-sizex="1" data-sizey="1" class="widget-jenkins_job">
+      <div data-id="hotfix-test-sanity" data-view="JenkinsJob" data-bind-class="result | append additionalclass" data-additionalclass=" widget"></div>
+      <i class="fa fa-archive icon-background"></i>
+    </li>
+    <li data-row="3" data-col="3" data-sizex="1" data-sizey="1" class="widget-jenkins_job">
+      <div data-view="Clock"></div>
+    </li>
+  </ul>
+</div>
+<%- contentFor('title') %>
+QA Tests Dashboard
