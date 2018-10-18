@@ -1,5 +1,3 @@
-@Library('feature_branch_push')
-
 feature_branch_push {
     branch = 'master'
     scmUrl = 'ssh://git@myScmServer.com/repos/myRepo.git'
