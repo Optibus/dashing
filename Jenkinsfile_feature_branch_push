@@ -1,24 +1,5 @@
-pipeline {
-    agent any
-
-    libraries {
-        lib('feature_branch_push@feature-branch-pipeline')
-    }
-
-    stages {
-        stage('push') {
-            steps {
-                feature_branch_push (
-                    branch: 'master',
-                    scmUrl: 'ssh://git@myScmServer.com/repos/myRepo.git',
-                    email: 'team@example.com',
-                    serverPort: '8080',
-                    developmentServer: 'dev-myproject.mycompany.com',
-                    stagingServer: 'staging-myproject.mycompany.com',
-                    productionServer: 'production-myproject.mycompany.com'
-                )
-            }
-        }
-    }
-}
-
+myDeliveryPipeline(branch: 'master', scmUrl: 'ssh://git@myScmServer.com/repos/myRepo.git',
+        email: 'team@example.com', serverPort: '8080',
+        developmentServer: 'dev-myproject.mycompany.com',
+        stagingServer: 'staging-myproject.mycompany.com',
+        productionServer: 'production-myproject.mycompany.com')
