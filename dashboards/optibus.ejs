@@ -61,14 +61,18 @@ $(function() {
       <div data-id="rc-circle_ci" data-view="CircleCi" data-bind-class="result | append additionalclass" data-additionalclass=" widget"></div>
       <i class="fa fa-archive icon-background"></i>
     </li>
+    <!--<li data-row="5" data-col="2" data-sizex="1" data-sizey="1">-->
+      <!--<div data-view="Image" data-image="/logo-header.png"></div>-->
+    <!--</li>-->
     <li data-row="5" data-col="2" data-sizex="1" data-sizey="1">
-      <div data-view="Image" data-image="/logo-header.png"></div>
-    </li>
-    <li data-row="5" data-col="3" data-sizex="1" data-sizey="1">
       <div data-view="Clock"></div>
       <i class="fa fa-clock-o icon-background"></i>
+    </li>
+    <li data-row="5" data-col="3" data-sizex="1" data-sizey="1" class="widget-jenkins_job">
+      <div data-id="rc-test-regression" data-view="JenkinsJob" data-bind-class="result | append additionalclass" data-additionalclass=" widget"></div>
+      <i class="fa fa-archive icon-background"></i>
     </li>
   </ul>
 </div>
 <%- contentFor('title') %>
-Unit Testing Dashboard
+Testing Dashboard
